@@ -20,7 +20,15 @@ class PostController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('auth');
+        // $this->middleware('auth');
+    }
+
+    public function list(){
+        $posts = Post::with(['user', 'tags'])->get();
+
+        return response()->json([ 
+            'posts' => $posts
+            ]);
     }
 
     /**

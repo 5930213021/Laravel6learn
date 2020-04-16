@@ -6,8 +6,8 @@
     <table class="table">
         <thead class="thead-dark">
           <tr>
-            <th scope="col">No.</th>
-            <th scope="col">list</th>
+            <th scope="col">@lang('tag.no')</th>
+            <th scope="col">@lang('tag.list')</th>
             <th scope="col"></th>
             <th scope="col"></th>
             {{-- <th scope="col">Last</th>
@@ -38,5 +38,4 @@
       </table>
       </div>
 
-
-      @endsection
+@endsection

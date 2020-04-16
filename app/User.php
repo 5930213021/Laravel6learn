@@ -8,7 +8,6 @@ use Illuminate\Notifications\Notifiable;
 
 class User extends Authenticatable
 {
-    use Notifiable;
 
     /**
      * The attributes that are mass assignable.
@@ -16,6 +15,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
+        // Translatable
         'name', 'email', 'password',
     ];
 
@@ -40,6 +40,10 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    // public function getTranslation(string $attributeName, string $locale){
+    //     $newsItem->getTranslations();
+    // }
 
     public function posts()
     {

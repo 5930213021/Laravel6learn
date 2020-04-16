@@ -30,7 +30,8 @@
     }
     .top{
         color: #FC718A;
-    }    
+    }   
+   
     </style>
 </head>
 <body>
@@ -74,6 +75,9 @@
                                             <a class="dropdown-item" href="{{ route('users.index') }}">
                                                 User_list
                                             </a>
+                                            <a class="dropdown-item" href="{{ route('tags.index') }}">
+                                                Tags_list
+                                            </a>
                                     @endif
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
@@ -94,13 +98,18 @@
             </div>
         </nav>
 
-        <main class="py">
+        <main class="py-5">
             @yield('content')
             @yield('admin')
             @yield('post')
             @yield('createpost')
             @yield('editpost')
+            @yield('showpost')
+
             @yield('tag')
+            @yield('createtag')
+            @yield('edittag')
+            @yield('showtag')
         </main>
     </div>
     @yield('script')

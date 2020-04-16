@@ -27,3 +27,19 @@
     </div>
 </div>
 @endsection
+
+@section('script')
+    <script>
+        // let fruits = new Array();
+        // let arr = [];
+        let fruits = ["Mel","Dur","App"];
+        for( let fruit of fruits ){
+            console.log(fruit)
+        }
+        
+
+
+
+   
+    </script>
+@endsection

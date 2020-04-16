@@ -56,7 +56,9 @@
     <div class="row justify-content-center">
         <div class="col-md-8 mrt">
             <div class="card head cen">
-               <div class="header">{{ __('Login') }}</div> 
+               <div class="header">{{__('msg.docs')}}
+                   {{-- {{ __('Login') }} --}}
+                </div> 
                 {{-- <div class="card-header">{{ __('Login') }}</div> --}}
 
                 <div class="card-body cen">
